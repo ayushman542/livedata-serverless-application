@@ -1,7 +1,7 @@
 User Information Fetcher
 This project aims to fetch user details based on a search query from a third-party API. It leverages various technologies and methodologies to ensure efficient and reliable data retrieval.
 
-Live Project - https://awsprojects2024.s3.ap-southeast-2.amazonaws.com/aws_Project_2024/index.html
+
 
 Technologies Used
 Node.js
