@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 640px) {
+            .text-lg {
+                font-size: 1.125rem;
+            }
+            .text-xl {
+                font-size: 1.25rem;
+            }
+            .text-2xl {
+                font-size: 1.5rem;
+            }
+            .text-3xl {
+                font-size: 1.875rem;
+            }
+        }
+        .scroll-container {
+            max-height: 700px; 
+            overflow-y: auto;
+        }
+        .student-entry {
+            background-color: #f1f1f1; 
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-grey-600 to-grey-600 flex items-start justify-center py-1">
+    <div class="w-full max-w-lg mx-auto bg-white p-3 rounded-lg shadow-xl mt-8">
+        <form method="get" id="searchForm" class="space-y-6">
+            <h2 class="text-3xl font-bold text-gray-900 text-center">Search Student</h2>
+            <label for="search" class="block text-lg font-medium text-gray-900">Developer - Ayushman</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-6 h-6 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                <input type="text" id="search" name="search" class="block w-full p-2 pl-10 text-lg text-gray-900 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" placeholder="Name or RegNo." required>
+                <button type="submit" id="submit" class="text-white absolute right-1.5 bottom-1.5 bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-3 py-1">Search</button>
+            </div>
+        </form>
+
+        <div id="userData" class="relative overflow-x-auto mt-4 scroll-container">
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
