@@ -46,6 +46,9 @@ Amazon S3 (Simple Storage Service) is a scalable object storage service. The pro
 
 ```
 
+![image](https://github.com/user-attachments/assets/7817143c-98c1-41ee-9d05-c430600490c6)
+
+
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `params` | Open API key |
